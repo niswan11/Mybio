@@ -3,15 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mybio — Fresh Start</title>
+    <title>Office360s — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Office360s portfolio — workspace & office design projects" />
   </head>
   <body>
-    <main class="container">
-      <h1>Welcome — Fresh Start</h1>
-      <p>This repository was reset and initialized with a minimal starter project.</p>
-      <button id="greet">Say Hello</button>
+    <header class="site-header">
+      <div class="inner">
+        <a class="logo" href="#">Office360s</a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="inner">
+        <h1>Designing productive workplaces</h1>
+        <p>Office360s creates modern office spaces that boost collaboration and productivity.</p>
+        <a class="btn" href="#projects">View Work</a>
+      </div>
+    </section>
+
+    <main class="content">
+      <section id="about" class="card">
+        <h2>About Office360s</h2>
+        <p>We blend ergonomics, aesthetics, and technology to craft offices that people love to work in. From small startups to enterprise campuses, our team handles concept, design, and delivery.</p>
+      </section>
+
+      <section id="services" class="card">
+        <h2>Services</h2>
+        <ul class="services-list">
+          <li>Workspace Strategy & Consulting</li>
+          <li>Interior Design & Fit-out</li>
+          <li>Furniture Procurement</li>
+          <li>Project Management</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <div class="thumb">A</div>
+            <h3>Alpha HQ</h3>
+            <p>Open-plan workspace with flexible collaboration zones.</p>
+            <a href="https://office360s.com" target="_blank" rel="noopener">Case study</a>
+          </article>
+
+          <article class="project">
+            <div class="thumb">B</div>
+            <h3>Beta Studios</h3>
+            <p>Creative studio optimized for hybrid teams.</p>
+            <a href="https://office360s.com" target="_blank" rel="noopener">Case study</a>
+          </article>
+
+          <article class="project">
+            <div class="thumb">C</div>
+            <h3>Gamma Campus</h3>
+            <p>Large-scale campus design with amenity spaces.</p>
+            <a href="https://office360s.com" target="_blank" rel="noopener">Case study</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <label>Full name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="inner">© Office360s — Built with care</div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
